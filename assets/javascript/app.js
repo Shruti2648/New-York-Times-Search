@@ -38,7 +38,8 @@ $("#search").on("click", function (event) {
     })
 
     $("#clear").on("click", function(event) {
+        console.log("In clear")
         event.preventDefault();
-        $("article-container").empty();
+        $("#article-container").empty();
     })
 });
