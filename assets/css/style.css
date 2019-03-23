@@ -1,0 +1,43 @@
+#nav{
+    background-color: #21315b;
+    text-align: center;
+    padding: 50px;
+    font-weight: bolder;
+    color: white;
+    font-size: 25px;
+   }
+   
+   .search:before {
+    font-family: 'FontAwesome';
+    content: '\f7c2';
+    padding-left: 15px;
+    position: relative;
+    font-size: 90%;
+   }
+   
+   
+   .clear:before {
+    font-family: 'FontAwesome';
+    content: '\f2ed';
+    padding-left: 15px;
+    position: relative;
+    top: 1px;
+    font-size: 90%;
+   }
+   
+   form,
+   .card{
+    height: 500px;
+    width: 900px;
+    margin: 0 auto;
+   }
+   
+   #searchParameters,
+   .h4{
+    color: white;
+    background-color: black;
+   }
+   
+   .container{
+    margin: 0 auto;
+   }
