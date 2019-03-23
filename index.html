@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <head>
   <meta charset="utf-8">
   <title>NY Times</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">NY Times Search</span>
-       </nav>
-    <form>
-        <div class="form-group">
-          <label for="searchTerms">Search Term:</label>
-          <input type="search" class="form-control" id="searchTerms" aria-describedby="search" placeholder="Search">
-        </div>
-        <div class="form-group">
-          <label for="records">Number of Records to Retrieve</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-              <option>1</option>
-              <option>5</option>
-              <option>10</option>
-            </select>
-        </div>
-      <div class="form-group form-check">
-        <label for="records">Start Year (Optional)</label>
-        <input type="records" class="form-control" id="startYear">
-      </div>
-      <div>
-        <label for="records">End Year (Optional)</label>
-        <input type="records" class="form-control" id="endYear">
-      </div>
-        <button type="search" class=" search btn btn-primary">Search</button>
-        <button type="clearResults" class="btn btn-primary">Clear Results</button>
-      </form>
-      <div class="card">
-          <div class="card-body">
-            Top Articles
-          </div>
-        </div>
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">NY Times Search</span>
+  </nav>
+  <form>
+    <div class="form-group">
+      <label for="searchTerms">Search Term:</label>
+      <input type="search" class="form-control" id="searchTerms" aria-describedby="search" placeholder="Search">
+    </div>
+    <div class="form-group">
+      <label for="records">Number of Records to Retrieve</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>5</option>
+        <option>10</option>
+      </select>
+    </div>
+    <div class="form-group form-check">
+      <label for="records">Start Year (Optional)</label>
+      <input type="records" class="form-control" id="startYear">
+    </div>
+    <div>
+      <label for="records">End Year (Optional)</label>
+      <input type="records" class="form-control" id="endYear">
+    </div>
+    <button type="submit" class=" search btn btn-primary" id="search">Search</button>
+    <button type="submit" class="btn btn-primary" id="clear">Clear Results</button>
+  </form>
+  <div class="card">
+    <div class="card-body" id="article-container">
+      Top Articles
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
+
 </html>
