@@ -9,12 +9,13 @@
   <title>NY Times</title>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">NY Times Search</span>
-       </nav>
+    <div class= "jumbotron" id=nav>
+        <div class="containter">
+          <h1 class="display-4"><i class="far fa-newspaper"></i>New York Times Search</h1>
+        </div>
     <form>
     <div class = "jumbotron">
-      <h1><i class="far fa-newspaper"></i>Search Parameters</h1>
+      <h4><i class="far fa-newspaper"></i>Search Parameters</h4>
         <div class="form-group">
           <label for="searchTerms">Search Term:</label>
           <input type="search" class="form-control" id="searchTerms" aria-describedby="search" placeholder="Search">
@@ -35,9 +36,8 @@
         <label for="records">End Year (Optional)</label>
         <input type="records" class="form-control" id="endYear">
       </div>
-        <button type="search" class=" search btn btn-secondary">
-            <i class="far fa-search"></i>Search</button>
-        <button type="clearResults" class="clear btn btn-secondary"><i class="fal fa-trash-alt"></i>Clear Results</button>
+        <button type="search" class=" search btn btn-secondary">Search</button>
+        <button type="clearResults" class="clear btn btn-secondary">Clear Results</button>
       </form>
     </div>
       <div class="card">
